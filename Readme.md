@@ -29,6 +29,9 @@ Every Data-Structure has its own folder and each of them has more folders in the
     │   │   └── 📄 code.c
     │   └── 📂 Singly/
     │       └── 📄 code.c
+    ├── 📂 Stack/
+    │   ├── 📂 Array/
+    │   │   └── 📄 code.c
     ├── (more to be added...)
     ├── ❗ .gitignore
     └── 📘 Readme.md
@@ -55,5 +58,10 @@ Since this repository focuses on Data Structures, **creation**, **insertion**, *
   Implemented Singly Circular Linked List similar almost in same manner as Singly Lined List, the difference being here the **last** node's **next** pointer points back at the **starting** node.
 - **Doubly Circular Linked List:**  
   Implemented Doubly Circular Linked List similar almost in same manner as Doubly Lined List, the difference being here the **last** node's **next** pointer points back at the **starting** node and the **starting** node's **previous** pointer points at the **last** node.
+
+### Stack
+
+- **Stack using Array:**  
+  Implemented Stack using Array by creating struct `STACK` similar to the struct of _Static Array_. The `int top` in the struct stores the index of the topmost element. **Push** and **Pop** functions are implemented with proper overflow/underflow checks.
 
 (_❕ This repository is a practise in progress and more data-structures will be added in future_)
