@@ -32,6 +32,8 @@ Every Data-Structure has its own folder and each of them has more folders in the
     ├── 📂 Stack/
     │   ├── 📂 Array/
     │   │   └── 📄 code.c
+    │   ├── 📂 LinkedList/
+    │   │   └── 📄 code.c
     ├── (more to be added...)
     ├── ❗ .gitignore
     └── 📘 Readme.md
@@ -63,5 +65,7 @@ Since this repository focuses on Data Structures, **creation**, **insertion**, *
 
 - **Stack using Array:**  
   Implemented Stack using Array by creating struct `STACK` similar to the struct of _Static Array_. The `int top` in the struct stores the index of the topmost element. **Push** and **Pop** functions are implemented with proper overflow/underflow checks.
+- **Stack using Linked List:**  
+  Implemented Stack using Linked List by creating struct `STACK` containing Node pointer `NODE *top`. The Nodes follow _Singly Linked List_ behaviour. The _head/root_ pointer of the _Linked List_ is treated as the _Top_ pointer which makes **Push** and **Pop** easy at the beginning of the Linked List.
 
 (_❕ This repository is a practise in progress and more data-structures will be added in future_)
