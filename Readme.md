@@ -52,14 +52,16 @@ Since this repository focuses on Data Structures, **creation**, **insertion**, *
 
 ### Linked List
 
-- **Singly Linked List:**  
-  Implemented Singly Linked List by creating struct `NODE` containing the data `int data` and pointer to next node `struct node * next`. The _head_ pointer is used to point to the starting node of the linked list. Each node points to the next node and the last node points to _NULL_.
-- **Doubly Linked List:**  
-  Implemented Doubly Linked List by creating struct `NODE` containing the data `int data`, pointer to next node `struct node * next` and pointer to the previous node `struct node * prev`. The _head_ pointer is used to point to the starting node of the linked list and the _end_ pointer is used to point to the last node of the linked list. Each node points to its next and previous node and the last node points to _NULL_ as next.
-- **Singly Circular Linked List:**  
-  Implemented Singly Circular Linked List similar almost in same manner as Singly Lined List, the difference being here the **last** node's **next** pointer points back at the **starting** node.
-- **Doubly Circular Linked List:**  
-  Implemented Doubly Circular Linked List similar almost in same manner as Doubly Lined List, the difference being here the **last** node's **next** pointer points back at the **starting** node and the **starting** node's **previous** pointer points at the **last** node.
+- **Linear:**  
+  - **Singly Linked List:**  
+    Implemented Singly Linked List by creating struct `NODE` containing the data `int data` and pointer to next node `struct node * next`. The _head_ pointer is used to point to the starting node of the linked list. Each node points to the next node and the last node points to _NULL_.
+  - **Doubly Linked List:**  
+    Implemented Doubly Linked List by creating struct `NODE` containing the data `int data`, pointer to next node `struct node * next` and pointer to the previous node `struct node * prev`. The _head_ pointer is used to point to the starting node of the linked list and the _end_ pointer is used to point to the last node of the linked list. Each node points to its next and previous node and the last node points to _NULL_ as next.
+- **Circular:**  
+  - **Singly Circular Linked List:**  
+    Implemented Singly Circular Linked List similar almost in same manner as Singly Lined List, the difference being here the **last** node's **next** pointer points back at the **starting** node.
+  - **Doubly Circular Linked List:**  
+    Implemented Doubly Circular Linked List similar almost in same manner as Doubly Lined List, the difference being here the **last** node's **next** pointer points back at the **starting** node and the **starting** node's **previous** pointer points at the **last** node.
 
 ### Stack
 
@@ -73,5 +75,7 @@ Since this repository focuses on Data Structures, **creation**, **insertion**, *
 - **Linear:**  
   - **Queue using Array:**  
     Implemented Queue using Array by creating struct QUEUE with a fixed sized array `int arr[MAX_SIZE]`. The `int front` in the stuct stores the index of the first element (_where deletion happens_) and the `int rear` stores the position of the last element (_where insertion happens_). When every element is removed the _rear_ and _front_ indexes are reverted back to _-1_.
+  - **Queue using Linked List:**  
+  Implemented Queue using Linked List by creating struct `QUEUE` containing Node pointers `NODE *front` and `NODE *rear`. The Nodes follow _Singly Linked List_ behaviour. The _head/root_ node pointer of the _Linked List_ is treated as the _front_ pointer (_where deletion happens_) and the _end/last_ node pointer is treated as the _rear_ pointer (_where insertion happnes_).
 
 (_❕ This repository is a practise in progress and more data-structures will be added in future_)
