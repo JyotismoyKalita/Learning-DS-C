@@ -32,8 +32,8 @@ Every Data-Structure has its own folder and each of them has more folders in the
     ├── 📂 Stack/
     │   ├── 📂 Array/
     │   │   └── 📄 code.c
-    │   ├── 📂 LinkedList/
-    │   │   └── 📄 code.c
+    │   └── 📂 LinkedList/
+    │       └── 📄 code.c
     ├── 📂 Queue/
     │   ├── 📂 Linear/
     │   │   ├── 📂 Array/
