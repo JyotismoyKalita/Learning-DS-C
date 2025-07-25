@@ -79,6 +79,8 @@ Since this repository focuses on Data Structures, **creation**, **insertion**, *
   Implemented Queue using Linked List by creating struct `QUEUE` containing Node pointers `NODE *front` and `NODE *rear`. The Nodes follow _Singly Linked List_ behaviour. The _head/root_ node pointer of the _Linked List_ is treated as the _front_ pointer (_where deletion happens_) and the _end/last_ node pointer is treated as the _rear_ pointer (_where insertion happnes_).
 - **Circular:**  
   - **Circular Queue using Array:**  
-    Implemented Circular Queue using Array similar to Linear Queue using Array, the fundamental difference being the use of `% - modulo` operator to wrap _front_ and _rear_ indexes making them increment circularly to prevent wastage of space.
+    Implemented Circular Queue using Array similar to _Linear Queue using Array_, the fundamental difference being the use of `% - modulo` operator to wrap _front_ and _rear_ indexes making them increment circularly to prevent wastage of space.
+  - **Circular Queue using Linked List:**  
+  Implemented Circular Queue using Linked List similar to _Linear Queue using Linked List_, the fundamental difference being the _rear_ pointer i.e. the last node points next back to the _front_ pointer i.e. the first node.
 
 (_❕ This repository is a practise in progress and more data-structures will be added in future_)
