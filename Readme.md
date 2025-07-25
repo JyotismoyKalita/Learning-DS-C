@@ -34,6 +34,17 @@ Every Data-Structure has its own folder and each of them has more folders in the
     │   │   └── 📄 code.c
     │   ├── 📂 LinkedList/
     │   │   └── 📄 code.c
+    ├── 📂 Queue/
+    │   ├── 📂 Linear/
+    │   │   ├── 📂 Array/
+    │   │   │   └── 📄 code.c
+    │   │   └── 📂 LinkedList/
+    │   │       └── 📄 code.c
+    │   └── 📂 Circular/
+    │       ├── 📂 Array/
+    │       │   └── 📄 code.c
+    │       └── 📂 LinkedList/
+    │           └── 📄 code.c
     ├── (more to be added...)
     ├── ❗ .gitignore
     └── 📘 Readme.md
