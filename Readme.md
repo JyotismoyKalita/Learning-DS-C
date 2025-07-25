@@ -68,4 +68,10 @@ Since this repository focuses on Data Structures, **creation**, **insertion**, *
 - **Stack using Linked List:**  
   Implemented Stack using Linked List by creating struct `STACK` containing Node pointer `NODE *top`. The Nodes follow _Singly Linked List_ behaviour. The _head/root_ pointer of the _Linked List_ is treated as the _Top_ pointer which makes **Push** and **Pop** easy at the beginning of the Linked List.
 
+### Queue
+
+- **Linear:**  
+  - **Queue using Array:**  
+    Implemented Queue using Array by creating struct QUEUE with a fixed sized array `int arr[MAX_SIZE]`. The `int front` in the stuct stores the index of the first element (_where deletion happens_) and the `int rear` stores the position of the last element (_where insertion happens_). When every element is removed the _rear_ and _front_ indexes are reverted back to _-1_.
+
 (_❕ This repository is a practise in progress and more data-structures will be added in future_)
