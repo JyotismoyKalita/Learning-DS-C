@@ -29,6 +29,7 @@ void pop(STACK *arr)
     if (arr->top < 0)
     {
         printf("Stack Empty\n");
+        return;
     }
     arr->top -= 1;
 }
