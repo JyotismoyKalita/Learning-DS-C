@@ -77,5 +77,8 @@ Since this repository focuses on Data Structures, **creation**, **insertion**, *
     Implemented Queue using Array by creating struct QUEUE with a fixed sized array `int arr[MAX_SIZE]`. The `int front` in the stuct stores the index of the first element (_where deletion happens_) and the `int rear` stores the position of the last element (_where insertion happens_). When every element is removed the _rear_ and _front_ indexes are reverted back to _-1_.
   - **Queue using Linked List:**  
   Implemented Queue using Linked List by creating struct `QUEUE` containing Node pointers `NODE *front` and `NODE *rear`. The Nodes follow _Singly Linked List_ behaviour. The _head/root_ node pointer of the _Linked List_ is treated as the _front_ pointer (_where deletion happens_) and the _end/last_ node pointer is treated as the _rear_ pointer (_where insertion happnes_).
+- **Circular:**  
+  - **Circular Queue using Array:**  
+    Implemented Circular Queue using Array similar to Linear Queue using Array, the fundamental difference being the use of `% - modulo` operator to wrap _front_ and _rear_ indexes making them increment circularly to prevent wastage of space.
 
 (_❕ This repository is a practise in progress and more data-structures will be added in future_)
