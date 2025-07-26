@@ -52,7 +52,9 @@ Every Data-Structure has its own folder and each of them has more folders in the
     │   │       └── 📄 code.c
     │   └── 📂 Priority/
     │       └── 📂 Unsorted/
-    │           └── 📂 Array/
+    │           ├── 📂 Array/
+    │           │   └── 📄 code.c
+    │           └── 📂 LinkedList/
     │               └── 📄 code.c
     ├── (more to be added...)
     ├── ❗ .gitignore
@@ -112,5 +114,7 @@ Since this repository focuses on Data Structures, **creation**, **insertion**, *
     - **Array:**  
       Implemented Unsorted Priority Queue using Array similar to _Circular Queue using Array_. The fundamental difference being, there is an extra array `int prio[MAX_SIZE]` which stores the **priority** of every element at the same index as of them in the `int arr[MAX_SIZE]`. During **insertion** a priority value is entered for the element. During **deletion** the element with the least corresponding priority value is deleted.  
       Here, `Lower Priority Value = Higher Priority to Delete`. e.g. _Element with priority 3 will be deleted before than element with priority 7_.
+    - **Linked List:**  
+     Implemented Unsorted Priority Queue using Linked List similar to _Linear Queue using Linked List_, but, used _Doubly Linked List_ instead of _Singly Linked List_. The `NODE` struct additionally contains `int priority`. During **insertion** a priority value is entered for the element. During **deletion** the element with the least priority value is deleted.
 
 (_❕ This repository is a practise in progress and more data-structures will be added in future_)
