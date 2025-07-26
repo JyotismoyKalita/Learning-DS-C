@@ -40,10 +40,13 @@ Every Data-Structure has its own folder and each of them has more folders in the
     │   │   │   └── 📄 code.c
     │   │   └── 📂 LinkedList/
     │   │       └── 📄 code.c
-    │   └── 📂 Circular/
-    │       ├── 📂 Array/
-    │       │   └── 📄 code.c
-    │       └── 📂 LinkedList/
+    │   ├── 📂 Circular/
+    │   │   ├── 📂 Array/
+    │   │   │   └── 📄 code.c
+    │   │   └── 📂 LinkedList/
+    │   │       └── 📄 code.c
+    │   └── 📂 DoubleEndedCircular/
+    │       └── 📂 Array/
     │           └── 📄 code.c
     ├── (more to be added...)
     ├── ❗ .gitignore
@@ -93,5 +96,8 @@ Since this repository focuses on Data Structures, **creation**, **insertion**, *
     Implemented Circular Queue using Array similar to _Linear Queue using Array_, the fundamental difference being the use of `% - modulo` operator to wrap _front_ and _rear_ indexes making them increment circularly to prevent wastage of space.
   - **Circular Queue using Linked List:**  
   Implemented Circular Queue using Linked List similar to _Linear Queue using Linked List_, the fundamental difference being the _rear_ pointer i.e. the last node points next back to the _front_ pointer i.e. the first node.
+- **Double Ended:**  
+  - **Circular Deque using Array:**  
+    Implemented Circular Deque using Array similar to _Circular Queue using Array_, the fundamental difference being **insertion** and **deletion** can happen at both _front_ and _rear_.
 
 (_❕ This repository is a practise in progress and more data-structures will be added in future_)
