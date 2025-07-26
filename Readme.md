@@ -45,11 +45,15 @@ Every Data-Structure has its own folder and each of them has more folders in the
     │   │   │   └── 📄 code.c
     │   │   └── 📂 LinkedList/
     │   │       └── 📄 code.c
-    │   └── 📂 DoubleEnded/
-    │       ├── 📂 Array/
-    │       │   └── 📄 code.c
-    │       └── 📂 LinkedList/
-    │           └── 📄 code.c
+    │   ├── 📂 DoubleEnded/
+    │   │   ├── 📂 Array/
+    │   │   │   └── 📄 code.c
+    │   │   └── 📂 LinkedList/
+    │   │       └── 📄 code.c
+    │   └── 📂 Priority/
+    │       └── 📂 Unsorted/
+    │           └── 📂 Array/
+    │               └── 📄 code.c
     ├── (more to be added...)
     ├── ❗ .gitignore
     └── 📘 Readme.md
@@ -103,5 +107,10 @@ Since this repository focuses on Data Structures, **creation**, **insertion**, *
     Implemented Circular Deque using Array similar to _Circular Queue using Array_ (_to avoid wastage of space_), the fundamental difference being **insertion** and **deletion** can happen at both _front_ and _rear_.
   - **Deque using Linked List:**  
     Implemented Deque using Linked List similar to _Linear Queue using Linked List_, but, _Doubly Linked List_ was used instead of the _Singly Linked List_ so that _insertion_ and _deletion_ at both _front_ and _rear_ are quick.
+- **Priority:**  
+  - **Unsorted:**  
+    - **Array:**  
+      Implemented Unsorted Priority Queue using Array similar to _Circular Queue using Array_. The fundamental difference being, there is an extra array `int prio[MAX_SIZE]` which stores the **priority** of every element at the same index as of them in the `int arr[MAX_SIZE]`. During **insertion** a priority value is entered for the element. During **deletion** the element with the least corresponding priority value is deleted.  
+      Here, `Lower Priority Value = Higher Priority to Delete`. e.g. _Element with priority 3 will be deleted before than element with priority 7_.
 
 (_❕ This repository is a practise in progress and more data-structures will be added in future_)
