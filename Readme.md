@@ -57,7 +57,9 @@ Every Data-Structure has its own folder and each of them has more folders in the
     │       │   └── 📂 LinkedList/
     │       │       └── 📄 code.c
     │       └── 📂 Sorted/
-    │           └── 📂 Array/
+    │           ├── 📂 Array/
+    │           │   └── 📄 code.c
+    │           └── 📂 LinkedList/
     │               └── 📄 code.c
     ├── (more to be added...)
     ├── ❗ .gitignore
@@ -122,5 +124,7 @@ Since this repository focuses on Data Structures, **creation**, **insertion**, *
   - **Sorted:**  
     - **Array:**  
       Implemented Sorted Priority Queue using Array similar to _Circular Queue using Array_. The fundamental difference being, there is an extra array `int prio[MAX_SIZE]` which stores the **priority** of every element at the same index as of them in the `int arr[MAX_SIZE]`. During **insertion** a priority value is entered and the element is stored in order of priority. The elements with higher priority value are shifted right and the element to be inserted is placed just after the lower priority valued element. **Deletion** is performed at the front removing the highest priority valued element in the queue.
+    - **Linked List:**  
+     Implemented Sorted Priority Queue using Linked List similar to _Linear Queue using Linked List_, but, used _Doubly Linked List_ instead of _Singly Linked List_. The `NODE` struct additionally contains `int priority`. During **insertion** a priority value is entered and the element is stored in order of priority. The elements with higher priority value are shifted right and the element to be inserted is placed just after the lower priority valued element. **Deletion** is performed at the front removing the highest priority valued element in the queue.
 
 (_❕ This repository is a practise in progress and more data-structures will be added in future_)
