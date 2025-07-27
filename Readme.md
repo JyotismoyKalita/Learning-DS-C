@@ -62,7 +62,9 @@ Every Data-Structure has its own folder and each of them has more folders in the
     │           └── 📂 LinkedList/
     │               └── 📄 code.c
     ├── 📂 Tree/
-    │   └── 📂 Binary/
+    │   ├── 📂 Binary/
+    │   │   └── 📄 code.c
+    │   └── 📂 BST/
     │       └── 📄 code.c
     ├── (more to be added...)
     ├── ❗ .gitignore
@@ -143,6 +145,16 @@ Since this repository focuses on Data Structures, **creation**, **insertion**, *
   - **count_leaves** : counts the total leaves in the tree.  
   - **count_internal** : counts the total internal nodes in the tree.  
   - **count_height** : counts the total no. of edges from root to the deepest leaf (_height_) in the tree.  
-  - **free_all** : frees all the dynamically allocated nodes in the tree in post order traversal.  
+  - **free_all** : frees all the dynamically allocated nodes in the tree in post order traversal.
+- **Binary Search Tree:**  
+  Implemented Binary Search Tree by creating struct similar to that of _Binary Tree_. The fundamental difference being the logic of insertion and deletion. Implemented Binary Search Tree functions:
+  - **create** : allocates memory for _NODE_ and returns its address.
+  - **insert** : inserts a new node at the correct position in the BST through recursion by following the BST insertion rules.
+  - **search** : searches for a value in the BST recursively using the BST rules. Returns _NULL_ if value not present.
+  - **find_min** : finds the minimum value in the BST using the BST rules through recursion.
+  - **find_max** : finds the maximum value in the BST using the BST rules through recursion.
+  - **delete_node** : deletes the node with specified value using recursion and handling proper replacement and structure of nodes by following the BST rules.
+  - **display_inorder** : displays the tree in **inorder** sequence. This prints the values in ascending order.
+  - **free_all** : frees all the dynamically allocated nodes in the BST in post order traversal.
 
 (_❕ This repository is a practise in progress and more data-structures will be added in future_)
