@@ -61,6 +61,9 @@ Every Data-Structure has its own folder and each of them has more folders in the
     │           │   └── 📄 code.c
     │           └── 📂 LinkedList/
     │               └── 📄 code.c
+    ├── 📂 Tree/
+    │   └── 📂 Binary/
+    │       └── 📄 code.c
     ├── (more to be added...)
     ├── ❗ .gitignore
     └── 📘 Readme.md
@@ -126,5 +129,20 @@ Since this repository focuses on Data Structures, **creation**, **insertion**, *
       Implemented Sorted Priority Queue using Array similar to _Circular Queue using Array_. The fundamental difference being, there is an extra array `int prio[MAX_SIZE]` which stores the **priority** of every element at the same index as of them in the `int arr[MAX_SIZE]`. During **insertion** a priority value is entered and the element is stored in order of priority. The elements with higher priority value are shifted right and the element to be inserted is placed just after the lower priority valued element. **Deletion** is performed at the front removing the highest priority valued element in the queue.
     - **Linked List:**  
      Implemented Sorted Priority Queue using Linked List similar to _Linear Queue using Linked List_, but, used _Doubly Linked List_ instead of _Singly Linked List_. The `NODE` struct additionally contains `int priority`. During **insertion** a priority value is entered and the element is stored in order of priority. The elements with higher priority value are shifted right and the element to be inserted is placed just after the lower priority valued element. **Deletion** is performed at the front removing the highest priority valued element in the queue.
+
+### Tree
+
+- **Binary:**  
+  Implemented Binary Tree by creating struct `typedef struct node{...} NODE` with data pointer `int data`, `struct node *left` as left pointer and and `struct node *right` as right pointer. Additionally **Queue** was implemented (_using Singly Linked List like before_) to support **BFS** traversal. Implemented Binary Tree functions:  
+  - **create** : recursively creates the tree by asking where to add nodes at every point.  
+  - **display_inorder** : displays the tree in **inorder** sequence.  
+  - **display_preorder** : displays the tree in **preorder** sequence.  
+  - **display_postorder** : displays the tree in **postorder** sequence.  
+  - **display_levelorder** : displays the tree in **level order** sequence (_using the implemented Queue_).  
+  - **count_nodes** : counts the total nodes in the tree.  
+  - **count_leaves** : counts the total leaves in the tree.  
+  - **count_internal** : counts the total internal nodes in the tree.  
+  - **count_height** : counts the total no. of edges from root to the deepest leaf (_height_) in the tree.  
+  - **free_all** : frees all the dynamically allocated nodes in the tree in post order traversal.  
 
 (_❕ This repository is a practise in progress and more data-structures will be added in future_)
