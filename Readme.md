@@ -64,7 +64,9 @@ Every Data-Structure has its own folder and each of them has more folders in the
     ├── 📂 Tree/
     │   ├── 📂 Binary/
     │   │   └── 📄 code.c
-    │   └── 📂 BST/
+    │   ├── 📂 BST/
+    │   │   └── 📄 code.c
+    │   └── 📂 AVL/
     │       └── 📄 code.c
     ├── (more to be added...)
     ├── ❗ .gitignore
@@ -154,6 +156,21 @@ Since this repository focuses on Data Structures, **creation**, **insertion**, *
   - **find_min** : finds the minimum value in the BST using the BST rules through recursion.
   - **find_max** : finds the maximum value in the BST using the BST rules through recursion.
   - **delete_node** : deletes the node with specified value using recursion and handling proper replacement and structure of nodes by following the BST rules.
+  - **display_inorder** : displays the tree in **inorder** sequence. This prints the values in ascending order.
+  - **free_all** : frees all the dynamically allocated nodes in the BST in post order traversal.
+- **AVL:**  
+  Implemented AVL Tree similar to that of _Binary Search Tree_. The fundamental difference being, now every node stores its height in the struct with `int height`. The _insert_ function and _delete_ function are now modified to recalculate _height_ of every node in each operation and if the subtree is imbalanced, it is balanced using the AVL Tree rules, all of which is achieved through recursion and helper functions. Implemented AVL Tree functions:
+  - **create** : allocates memory for _NODE_ and returns its address.
+  - **update_height** : helper function to update height of the node using the heights of its left and right subtree.
+  - **get_balance** : helper function to get the balance factor of the subtree using the heights of its left and right subtrees.
+  - **right_rotate** : helper function that implements right rotation following the AVL Tree rules.
+  - **left_rotate** : helper function that implements left rotation following the AVL Tree rules.
+  - **balance_nodes** : balances _LL_, _LR_, _RR_ and _RL_ conditions following the AVL Tree rules.
+  - **insert** : inserts a new node at the correct position in the BST through recursion by following the BST insertion rules and then updates the height of every node and balances the tree if required by following the AVL Tree rules. It returns the address of the root.
+  - **search** : searches for a value in the BST recursively using the BST rules. Returns _NULL_ if value not present.
+  - **find_min** : finds the minimum value in the BST using the BST rules through recursion.
+  - **find_max** : finds the maximum value in the BST using the BST rules through recursion.
+  - **delete_node** : deletes the node with specified value using recursion and handling proper replacement and structure of nodes by following the BST rules and then updates the height of every node and balances the tree if required by  following the AVL Tree rules.
   - **display_inorder** : displays the tree in **inorder** sequence. This prints the values in ascending order.
   - **free_all** : frees all the dynamically allocated nodes in the BST in post order traversal.
 
