@@ -149,7 +149,7 @@ Since this repository focuses on Data Structures, **creation**, **insertion**, *
 - **Binary Search Tree:**  
   Implemented Binary Search Tree by creating struct similar to that of _Binary Tree_. The fundamental difference being the logic of insertion and deletion. Implemented Binary Search Tree functions:
   - **create** : allocates memory for _NODE_ and returns its address.
-  - **insert** : inserts a new node at the correct position in the BST through recursion by following the BST insertion rules.
+  - **insert** : inserts a new node at the correct position in the BST through recursion by following the BST insertion rules and returns the address of the root.
   - **search** : searches for a value in the BST recursively using the BST rules. Returns _NULL_ if value not present.
   - **find_min** : finds the minimum value in the BST using the BST rules through recursion.
   - **find_max** : finds the maximum value in the BST using the BST rules through recursion.

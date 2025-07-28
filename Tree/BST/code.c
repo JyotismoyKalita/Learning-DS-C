@@ -16,29 +16,22 @@ NODE *create(int val)
     return NN;
 }
 
-void insert(int val, NODE **n)
+NODE *insert(int val, NODE *n)
 {
-    if ((*n) == NULL)
+    if (n == NULL)
     {
-        (*n) = create(val);
-        return;
+        n = create(val);
+        return n;
     }
-    if (val == (*n)->data)
-        return;
-    if (val < (*n)->data)
+    else if (val < n->data)
     {
-        if ((*n)->left == NULL)
-            (*n)->left = create(val);
-        else
-            insert(val, &((*n)->left));
+        n->left = insert(val, n->left);
     }
-    else if (val > (*n)->data)
+    else if (val > n->data)
     {
-        if ((*n)->right == NULL)
-            (*n)->right = create(val);
-        else
-            insert(val, &((*n)->right));
+        n->right = insert(val, n->right);
     }
+    return n;
 }
 
 NODE *search(int val, NODE *n)
@@ -141,13 +134,13 @@ void free_all(NODE *n)
 int main()
 {
     NODE *root = NULL;
-    insert(5, &root);
-    insert(3, &root);
-    insert(8, &root);
-    insert(2, &root);
-    insert(7, &root);
-    insert(1, &root);
-    insert(9, &root);
+    root = insert(5, root);
+    root = insert(3, root);
+    root = insert(8, root);
+    root = insert(2, root);
+    root = insert(7, root);
+    root = insert(1, root);
+    root = insert(9, root);
     printf("------ Inorder Display ------\n");
     display_inorder(root);
     printf("\nExpected:\n1 2 3 5 7 8 9\n");
