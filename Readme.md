@@ -173,5 +173,25 @@ Since this repository focuses on Data Structures, **creation**, **insertion**, *
   - **delete_node** : deletes the node with specified value using recursion and handling proper replacement and structure of nodes by following the BST rules and then updates the height of every node and balances the tree if required by  following the AVL Tree rules.
   - **display_inorder** : displays the tree in **inorder** sequence. This prints the values in ascending order.
   - **free_all** : frees all the dynamically allocated nodes in the BST in post order traversal.
+- **Red Black:**
+  Implemented Red Black Tree similar to that of _Binary Search Tree_. The fundamental difference being, now, instead of height, every node stores a color which is implemented by _typedef enum {...} Color_ (_DOUBLE\_BLACK, BLACK, RED_). Insertion and Deletion follow the BST and Red Black Tree rules. Implemented Red Black Tree funcrtions:
+  - **create** : allocates memory for _NODE_ and returns its address.
+  - **is_red** : helper function to know if a node is red.
+  - **flip_color** : helper function to flip the color of a node from red to black and vice versa.
+  - **color_check** : helper function to maintain color balance during insertion following the Red Black Tree rules.
+  - **right_rotate** : helper function that implements right rotation.
+  - **left_rotate** : helper function that implements left rotation.
+  - **fix_black** : helper function to fix the black height imbalance during deletion with the help of recursion and following the Red Black Tree rules.
+  - **insert_recursive** : inserts a new node at the correct position in the BST through recursion by following the BST insertion rules and then fixes color imbalance with _color\_check_.
+  - **insert** : Wrapper function for _insert\_recursive_ to always keep the root as black.
+  - **search** : searches for a value in the BST recursively using the BST rules. Returns _NULL_ if value not present.
+  - **find_min** : finds the minimum value in the BST using the BST rules through recursion.
+  - **find_max** : finds the maximum value in the BST using the BST rules through recursion.
+  - **delete_recursive** : deletes the node with specified value using recursion and handling proper replacement and structure of nodes by following the BST rules and maintains black height according to Red Black Tree rules using _fix\_black_.
+  - **delete_node** : Wrapper function for _delete\_recursive_ to always keep the root as black.
+  - **display_inorder** : displays the tree in **inorder** sequence. This prints the values in ascending order.
+  - **free_all** : frees all the dynamically allocated nodes in the BST in post order traversal.
+  - **validate_color** : validates that there are no Red-Red structure in the tree through recursion.
+  - **validate_black_height** : validates that the number of black nodes accross all paths from any node are consistent.
 
 (_❕ This repository is a practise in progress and more data-structures will be added in future_)
