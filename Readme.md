@@ -66,7 +66,11 @@ Every Data-Structure has its own folder and each of them has more folders in the
     │   │   └── 📄 code.c
     │   ├── 📂 BST/
     │   │   └── 📄 code.c
-    │   └── 📂 AVL/
+    │   ├── 📂 AVL/
+    │   │   └── 📄 code.c
+    │   ├── 📂 RedBlack/
+    │   │   └── 📄 code.c
+    │   └── 📂 Splay/
     │       └── 📄 code.c
     ├── (more to be added...)
     ├── ❗ .gitignore
@@ -174,7 +178,7 @@ Since this repository focuses on Data Structures, **creation**, **insertion**, *
   - **display_inorder** : displays the tree in **inorder** sequence. This prints the values in ascending order.
   - **free_all** : frees all the dynamically allocated nodes in the BST in post order traversal.
 - **Red Black:**
-  Implemented Red Black Tree similar to that of _Binary Search Tree_. The fundamental difference being, now, instead of height, every node stores a color which is implemented by _typedef enum {...} Color_ (_DOUBLE\_BLACK, BLACK, RED_). Insertion and Deletion follow the BST and Red Black Tree rules. Implemented Red Black Tree funcrtions:
+  Implemented Red Black Tree similar to that of _Binary Search Tree_. The fundamental difference being, now, instead of height, every node stores a color which is implemented by _typedef enum {...} Color_ (_DOUBLE\_BLACK, BLACK, RED_). Insertion and Deletion follow the BST and Red Black Tree rules. Implemented Red Black Tree functions:
   - **create** : allocates memory for _NODE_ and returns its address.
   - **is_red** : helper function to know if a node is red.
   - **flip_color** : helper function to flip the color of a node from red to black and vice versa.
@@ -193,5 +197,16 @@ Since this repository focuses on Data Structures, **creation**, **insertion**, *
   - **free_all** : frees all the dynamically allocated nodes in the BST in post order traversal.
   - **validate_color** : validates that there are no Red-Red structure in the tree through recursion.
   - **validate_black_height** : validates that the number of black nodes accross all paths from any node are consistent.
+- **Splay Tree:**  
+  Implemented Splay Tree similar to that of _Binary Search Tree_. The fundamental difference being the introduction of splaying and using it for searching, inserting and deleting. Implemented Splay Tree functions:  
+  - **create** : allocates memory for _NODE_ and returns its address.
+  - **zig** : performs right rotation at the node.
+  - **zag** : performs left rotation at the node.
+  - **splay** : performs splaying operations for _zig-zig_/_zag-zag_ and _zig-zag_/_zag-zig_ conditions recursively.
+  - **splay_wrapper** : wrapper around _splay_ function. Splaying operations for _zig_ or _zag_ condition are performed here otherwise calls _splay_ function.
+  - **insert** : inserts a new node at the correct position in the tree after splaying it.
+  - **delete_node** : deletes the node with specified value in the tree after splaying it.
+  - **display_inorder** : displays the tree in **inorder** sequence. This prints the values in ascending order.
+  - **free_all** : frees all the dynamically allocated nodes in the BST in post order traversal.
 
 (_❕ This repository is a practise in progress and more data-structures will be added in future_)
