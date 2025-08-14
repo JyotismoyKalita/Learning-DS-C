@@ -53,8 +53,6 @@ NODE *find_min(NODE *n)
         return NULL;
     if (n->left != NULL)
         return find_min(n->left);
-    else if (n->right != NULL)
-        return find_min(n->right);
     else
         return n;
 }
@@ -65,8 +63,6 @@ NODE *find_max(NODE *n)
         return NULL;
     if (n->right != NULL)
         return find_max(n->right);
-    else if (n->left != NULL)
-        return find_max(n->left);
     else
         return n;
 }
